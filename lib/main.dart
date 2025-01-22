@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/landing_page.dart';
+import 'navigation/main_screen.dart';
 
 void main() {
   runApp(const SetSailApp());
@@ -13,10 +13,8 @@ class SetSailApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Set Sail',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const LandingPage(), // LandingPage is now the home screen
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const MainScreen(),
     );
   }
 }
